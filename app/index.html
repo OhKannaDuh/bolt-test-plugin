@@ -1,31 +1,5 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="sakura.css">
-        <link rel="stylesheet" href="sakura-dark.css">
-        <link rel="stylesheet" href="app.css">
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    </head>
-    <body>
-        <div id="app">
-            <h2>Daily Tasks:</h2>
-            <ul>
-                <li v-for="(task, index) in tasks.daily" :key="index">{{task.text}} <input type="checkbox" :id="index" @change="checkbox_change" v-model="task.value"/></li>
-            </ul>
-            <input v-model="input.daily" placeholder="New Daily Task...">
-            <button @click="add_daily">Add</button>
-            <h2>Weekly Tasks:</h2>
-            <ul>
-                <li v-for="(task, index) in tasks.weekly" :key="index">{{task.text}} <input type="checkbox" :id="index" @change="checkbox_change" v-model="task.value"/></li>
-            </ul>
-            <h2>Monthly Tasks:</h2>
-            <ul>
-                <li v-for="(task, index) in tasks.monthly" :key="index">{{task.text}} <input type="checkbox" :id="index" @change="checkbox_change" v-model="task.value"/></li>
-            </ul>
-        </div>
-
-        <div id="draggable" draggable="true"></div>
-
-        <script src="BoltPlugin.js"></script>
+    <body style="background-color: red;">
         <script src="app.js"></script>
     </body>
 </html>
