@@ -43,9 +43,7 @@ plugin.add_message_callback(function (message) {
 window.addEventListener("DOMContentLoaded", () => {
   plugin.send_message_to_lua(JSON.stringify({ type: "ready" }));
 
-  document
-    .getElementById("draggable")
-    .addEventListener("mousemove", (event) => {
-      plugin.start_reposition();
-    });
+  document.getElementById("draggable").addEventListener("click", (event) => {
+    plugin.start_reposition();
+  });
 });
