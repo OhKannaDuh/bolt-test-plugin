@@ -1,0 +1,6 @@
+{
+    "main": "app.lua",
+    "name": "Test Plugin",
+    "description": "A Test Plugin"
+  }
+  
